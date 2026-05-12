@@ -12,7 +12,7 @@
 /* Header */
 .header {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 185px 1fr 185px;
   grid-template-columns: 1fr;
   height: 100vh;
   min-height: 768px;
@@ -41,6 +41,7 @@
   justify-self: start;
   align-self: center;
   margin: 0;
+  margin-left: -20px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--header-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -49,19 +50,30 @@
 .header__description {
   grid-row: 3 / 4;
   justify-self: end;
-  align-self: end;
+  align-self: start;
+  font-weight: 700;
+  color: var(--text-color);
 }
 
 .header__theme-menu-button {
   padding: 3px 13px;
   text-transform: lowercase;
-  font-size: 18px;
   line-height: 100%;
   color: var(--header-button-color);
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-hover);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--header-button-color);
+}
+
 .header__theme-menu-button_active {
-  border: 1px solid var(--header-button-color);
+  outline: 1px solid var(--header-button-color);
 }
 
 .decorated-zone::before,
@@ -87,12 +99,12 @@
 }
 
 .header__rec {
+  display: var(--display-rec);
   position: absolute;
   width: 52px;
   height: 26px;
   top: 20px;
   right: 30px;
-  font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -111,5 +123,60 @@
   box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
+/* Main */
 
+.main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.cards-column {
+  display: grid;
+  grid-template-columns: 315px 1fr;
+  gap: 20px;
+}
+
+.cards__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card__title {
+  margin-bottom: 10px;
+}
+
+.card__description {
+  color: var(--paragraph-color);
+  line-height: 23px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-areas: 
+    "sunset sunset ice-cream"
+    "tape books ice-cream"
+    "tape street street";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery__item:first-child {
+  grid-area: sunset;
+}
+
+.gallery__item:nth-child(2) {
+  grid-area: ice-cream;
+}
+
+.gallery__item:nth-child(3) {
+  grid-area: books;
+}
+
+.gallery__item:nth-child(4) {
+  grid-area: street;
+}
+
+.gallery__item:nth-child(5) {
+  grid-area: tape;
+}

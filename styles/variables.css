@@ -1,7 +1,11 @@
 :root {
-  /* Базовые переменные - будут работать если нет класса theme-light */
-  --bg-image: url('../images/cover-image.png');
-  --bg-color: #74728f;
-  --header-button-color: #353430;
-  --theme-accent-color: #FF8DCB;
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-color: #000633;
+  --header-button-color: #FF0070;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --header-title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --text-color: #000028;
+  --paragraph-color: #F1B2CE;
+  --display-rec: block;
 }
