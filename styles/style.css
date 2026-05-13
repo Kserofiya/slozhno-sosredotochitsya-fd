@@ -137,6 +137,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  margin-top: 40px;
 }
 
 .section__hard-to-concentrate .cards__list {
@@ -175,10 +176,6 @@
 
 .card__title {
   margin-bottom: 10px;
-}
-
-.section__hard-to-concentrate {
-  margin-top: 40px;
 }
 
 .section__reduces-concentration,
