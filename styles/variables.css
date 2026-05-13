@@ -1,11 +1,11 @@
 :root {
-  --bg-image: url('../images/cover-image-light.png');
-  --bg-color: #ffedf5;
-  --header-button-color: #353430;
-  --button-hover: rgba(50, 49, 45, 0.4);
-  --header-title-color: #FFC2E6;
-  --accent-color: #FF8DCB;
-  --text-color: #353430;
-  --paragraph-color: #353430;
-  --display-rec: none;
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-color: #000028;
+  --header-button-color: #FF0070;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --header-title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --text-color: #000028;
+  --paragraph-color: #F1B2CE;
+  --display-rec: block;
 }
