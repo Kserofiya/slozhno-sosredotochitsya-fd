@@ -23,12 +23,13 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <span class="header__rec">rec</span>
+      <span class="header__rec" aria-hidden="true">rec</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_light"
+              aria-label="Светлая тема"
             >
               День
             </button>
@@ -37,6 +38,7 @@
             <button
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
+              aria-label="Автоматическая тема"
             >
               Авто
             </button>
@@ -44,6 +46,7 @@
           <li class="header__theme-menu-item">
             <button
               class="header__theme-menu-button header__theme-menu-button_type_dark"
+              aria-label="Тёмная тема"
             >
               Неон
             </button>
@@ -73,7 +76,7 @@
       </section>
 
       <section class="section section__reduces-concentration">
-        <h2 class="accent-color">Что снижает концентрацию внимания?</h2>
+        <h2 class="accent-color reduces-concentration__title">Что снижает концентрацию внимания?</h2>
         <div class="cards__list">
           <div class="card__item">
             <h2 class="card__title title-decor">Концентрация</h2>
@@ -93,7 +96,7 @@
       <section class="section section__golden-fish">
         <h2 class="accent-color">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
         <div class="cards__list">
-          <h2 class="card__title title-decor">5 простых (на самом деле не очень) советов</h2>
+          <h2 class="golden-fish__title title-decor">5 простых (на самом деле не очень) советов</h2>
           <div class="card__item">
             <h2 class="card__title title-decor">Представьте небо и облака</h2>
             <p class="card__description">Или листья в ручье. Тут дело в лёгкой медитации, которая помогает успокоиться. Ведь часто именно тревожные мысли о сложных задачах как раз и мешают эти сложные задачи делать. В такие моменты можно закрыть глаза и представить, что чистое небо — это вы, а облака — тревожные мысли. И сколько бы их ни было — ясное небо всегда будет где-то там, за тучами, и никуда не денется. Это упражнение поможет вернуться в настоящий момент, а не волноваться о потенциальных проблемах из будущего.</p>
@@ -118,28 +121,28 @@
       </section>
 
       <section class="section section__gallery">
-        <h2 class="accent-color">А можно в картинках?</h2>
+        <h2 class="gallery__title title-decor">А можно в картинках?</h2>
         <div class="gallery">
           <div class="gallery__item">
-            <img src="images/sunset.png" alt="Sunset">
+            <img src="images/sunset.png" alt="Закат над горами" loading="lazy">
           </div>
           <div class="gallery__item">
-            <img src="images/ice-cream.png" alt="Ice cream">
+            <img src="images/ice-cream.png" alt="Мороженое с фруктами" loading="lazy">
           </div>
           <div class="gallery__item">
-            <img src="images/books.png" alt="Books">
+            <img src="images/books.png" alt="Стопка книг" loading="lazy">
           </div>
           <div class="gallery__item">
-            <img src="images/street.png" alt="Street">
+            <img src="images/street.png" alt="Городская улица" loading="lazy">
           </div>
           <div class="gallery__item">
-            <img src="images/tape.png" alt="Tape">
+            <img src="images/tape.png" alt="Кассета для магнитофона" loading="lazy">
           </div>
         </div>
       </section>
     </main>
-    <footer>
-
+    <footer class="footer decorated-zone">
+      <div class="footer__title" aria-hidden="true">focus</div>
     </footer>
   </body>
 </html>
