@@ -15,6 +15,7 @@
 }
 
 .title-decor {
+  color: var(--text-color);
   background-color: var(--accent-color);
 }
 
@@ -151,6 +152,10 @@ section {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+.section__title {
+  color: var(--decorated-color);
 }
 
 .reduces-concentration__title {
