@@ -8,6 +8,7 @@
   --text-color: #000028;
   --paragraph-color: #F1B2CE;
   --display-rec: block;
+  --decorated-color: #FF0070;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,5 +22,6 @@
     --text-color: #000028;
     --paragraph-color: #F1B2CE;
     --display-rec: block;
+    --decorated-color: #FF0070;
   }
 }

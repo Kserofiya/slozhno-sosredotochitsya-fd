@@ -53,6 +53,7 @@
   justify-self: start;
   align-self: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
   line-height: 83%;
   color: var(--header-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -63,6 +64,7 @@
   justify-self: center;
   align-self: center;
   font-weight: 700;
+  line-height: 23.4px;
   color: var(--text-color);
   padding-right: 5px;
 }
@@ -94,8 +96,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--decorated-color);
+  border-right: 1px solid var(--decorated-color);
   top: 10px;
   right: 10px;
 }
@@ -105,8 +107,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--decorated-color);
+  border-left: 1px solid var(--decorated-color);
   bottom: 10px;
   left: 10px;
 }
@@ -162,6 +164,7 @@ section {
 }
 
 .card__title {
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
@@ -342,7 +345,6 @@ section {
 
 @media (min-width: 1024px) {
   .header {
-    grid-template-rows: 185px 1fr 205px;
     padding-top: 20px;
     min-height: 768px;
   }
@@ -359,7 +361,6 @@ section {
 
   .header__description {
     max-width: 491px;
-    align-self: start;
   }
 
   .section__hard-to-concentrate,
